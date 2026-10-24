@@ -9,6 +9,12 @@
   color: #fff;
 }
 .hero-link {
+  font-weight: 500;
+  color: #fff;
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: #fd9222;
 }
 .hero-link-icon {
 }
