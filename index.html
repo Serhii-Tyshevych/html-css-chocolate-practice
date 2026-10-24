@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Simply Chocolate lorem" />
     <meta name="keywords" content="description" />
@@ -11,59 +12,92 @@
       href="/images/icons/logo.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Normalize styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Custom styles-->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header section-->
-    <header id="home">
-      <a href="./index.html"
-        >SIMPLY CHOCOLATE
+    <header class="header" id="home">
+      <a class="logo" href="./index.html"
+        ><i>SIMPLY</i> CHOCOLATE
         <img
-          src="/images/icons/logo.png"
+          class="logo-icon"
+          src="./images/icons/logo.svg"
           alt="Site logo"
           width="24"
           height="24"
       /></a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#made">How it&#39;s made?</a></li>
-          <li><a href="#reviews">Chocolate is loved</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-list-item">
+            <a a class="main-nav-link" href="#home">Home</a>
+          </li>
+          <li><a class="main-nav-link" href="#made">How it&#39;s made?</a></li>
+          <li>
+            <a class="main-nav-link" href="#reviews">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="socials">
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="/images/icons/facebook.svg"
+              class="socials-icon"
+              src="./images/icons/facebook.svg"
               alt="Facebook icon"
               width="24"
               height="24"
             />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="/images/icons/instagram.svg"
+              class="socials-icon"
+              src="./images/icons/instagram.svg"
               alt="Instagram icon"
               width="24"
               height="24"
             />
           </a>
         </li>
-
-        <li>
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src="/images/icons/illustration.svg"
+              class="socials-icon"
+              src="./images/icons/illustration.svg"
               alt="Twitter icon"
               width="24"
               height="24"
@@ -76,16 +110,19 @@
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section id="hero">
-        <h1>
+      <section class="hero" id="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it&#39;s made</button>
-        <a href="#benefits">
+        <button class="btn btn-filled" type="button">Buy now</button>
+        <button class="btn btn-outlined primary" type="button">
+          How it&#39;s made
+        </button>
+        <a class="hero-link" href="#benefits">
           scroll down
           <img
+            class="hero-link-icon"
             src="/images/icons/wrapper.svg"
             alt="Arrow down icon"
             width="22"
@@ -402,6 +439,7 @@
             </p>
           </li>
         </ul>
+        <button class="btn btn-outlined seconadary" type="button"></button>
       </section>
     </main>
 
