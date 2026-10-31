@@ -2,14 +2,25 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
   background-color: #fafafa;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 ol,
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -21,22 +32,50 @@ button {
 address {
   font-style: normal;
 }
+img {
+  display: block;
+}
 
 /* Base styles*/
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
 .section {
+  padding: 60px 0;
 }
 .section-title {
+  max-width: 412px;
+  margin: 0 auto 50px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 .accent {
   color: #fd9222;
 }
+.container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -47,10 +86,25 @@ address {
 }
 /* Socials*/
 .socials {
+  display: flex;
+  gap: 14px;
 }
 .socials-item {
+  width: 40px;
+  height: 40px;
 }
 .socials-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+}
+.socials-link:hover,
+.socials-link:focus {
+  border: 1px solid rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
 }
@@ -58,8 +112,11 @@ address {
 /*Button*/
 .btn {
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
+
   font-weight: 600;
+  border-radius: 100px;
+  padding: 14px 40px;
 }
 .btn-filled {
   color: #fff;
@@ -74,13 +131,18 @@ address {
 }
 .primary {
   color: #fff;
+  border-color: #fff;
 }
 .primary:hover,
 .primary:focus {
+  border-color: #fd9222;
   color: #fd9222;
 }
 .secondary {
   color: #111;
+  border-color: #fd9222;
+  display: block;
+  margin: 0 auto;
 }
 .secondary:hover,
 .secondary:focus {

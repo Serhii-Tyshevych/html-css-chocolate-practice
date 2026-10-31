@@ -1,6 +1,10 @@
 .ingredients {
+  padding-top: 120px;
 }
 .ingredients-title {
+  max-width: 412px;
+  margin:0 auto 50px ;
+  
 }
 .ingredients-list {
 }
