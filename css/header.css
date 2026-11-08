@@ -15,13 +15,30 @@
   gap: 24px;
 }
 .main-nav-item {
+  
 }
 .main-nav-link {
+  position: relative;
   font-weight: 500;
   padding: 11px 0;
   display: block;
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
+.main-nav-link:focus,
+.main-nav-link.current {
   color: #fd9222;
+}
+
+
+.main-nav-link.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background: #fd9222;
 }
