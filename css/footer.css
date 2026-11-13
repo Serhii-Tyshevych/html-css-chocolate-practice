@@ -3,13 +3,13 @@
   background-color: #1e1823;
 }
 .footer-top {
-    display: flex;
-    padding-bottom: 48px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-wrapper {
-margin-left: auto;
-margin-right: 90px;
+  margin-left: auto;
+  margin-right: 90px;
 }
 .footer-slogan {
   max-width: 300px;
@@ -26,7 +26,6 @@ margin-right: 90px;
 }
 
 .contacts {
- 
 }
 .contacts-list {
 }
@@ -44,9 +43,10 @@ margin-right: 90px;
   color: #fd9222;
 }
 .footer-bottom {
-   padding-top: 24px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .footer-menu {
   display: flex;
@@ -66,4 +66,33 @@ margin-right: 90px;
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: #fd9222;
+}
+
+/*Footer form*/
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+.footer-form-input {
+  padding: 13px 24px;
+  width: 314px;
+  height: 46px;
+
+  color: #fff;
+
+  background-color: transparent;
+  outline: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
+}
+
+.footer-form-input:focus {
+  border-color: #fd9222;
+}
+
+.footer-form-input::placeholder {
+  color: #fff;
 }
