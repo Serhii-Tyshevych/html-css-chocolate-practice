@@ -18,8 +18,8 @@
   background-image:
     linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.8)),
     image-set(
-      "../images/hero/hero-bg.jpg" 1x,
-      "../images/hero/hero-bg@2x.jpg" 2x
+      "../images/hero/hero-bg_mob.jpg" 1x,
+      "../images/hero/hero-bg_mob@2x.jpg" 2x
     );
 }
 @media only screen and (min-width: 768px) {
